@@ -1,0 +1,21 @@
+In this class project I implemented different loop designs for comparison. 
+
+This includes: 
+- N^2 nested loop
+- Hashed block nested loop
+- Zhou's SIMD-based nested loop
+- SIMD Hashed block nested loop
+
+It was pretty fun and the results are interesting since SIMD doesn't always win. 
+
+==============
+ ORIGINAL CODE 
+==============
+
+This is the code used to study the performance of various main-memory hash join
+algorithms for the following SIGMOD 2011 paper:
+
+Spyros Blanas, Yinan Li, Jignesh M. Patel: Design and evaluation of main
+memory hash join algorithms for multi-core CPUs. In SIGMOD Conference, 
+p. 37-48, 2011. (http://pages.cs.wisc.edu/~sblanas/files/multijoin.tar.bz2)
+
