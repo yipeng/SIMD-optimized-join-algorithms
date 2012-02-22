@@ -1,0 +1,77 @@
+Yipeng's Notes: 
+
+Make and run as such: 
+./multijoin conf/confName.conf <parms>
+
+Possible parms options
+Hash - H-BNL
+HashSimd - SIMD H-BNL
+BNL - SIMD N^2 NL
+N2 - N^2 NL
+
+==============
+ INTRODUCTION 
+==============
+
+This is the code used to study the performance of various main-memory hash join
+algorithms for the following SIGMOD 2011 paper:
+
+Spyros Blanas, Yinan Li, Jignesh M. Patel: Design and evaluation of main
+memory hash join algorithms for multi-core CPUs. In SIGMOD Conference, 
+p. 37-48, 2011.
+
+
+Feel free to experiment with the code, and please share any finidings and
+improvements you've made with the community.
+
+
+=================
+ GETTING STARTED
+=================
+
+1. Fix the thread affinitization for your particular machine/OS, by editing
+affinitizer.cpp, lines 39-44. The program will throw an exception by
+default if it is unset, because this is required for consistent readings
+of the tick counter (via rdtsc).
+ 
+
+2. Generate a uniform dataset: 
+
+$ cd datagen/
+$ ./generate.sh
+$ cd ..
+
+After a few minutes, the datagen/ directory will contain two files: 
+(a) the build side, "016M_build.tbl", a 256+ MB file with 16M tuples
+(b) the probe side, "256M_probe.tbl", a 4+ GB file with 256M tuples
+
+
+3. Compile:
+
+$ make
+
+
+4. Make sure libconfig++.so is in your path by doing:
+
+$ export LD_LIBRARY_PATH=$PWD/dist/lib/:$LD_LIBRARY_PATH
+
+
+5. Run with a sample configuration file. Let's pick the non-partitioning
+algorithm:
+
+$ ./multijoin conf/000001_no.conf
+
+The data that was generated in step 2 will first be loaded in memory (takes a
+while depending on your I/O speed), then the algorithm will run (takes
+seconds), and will output the something like this:
+
+RUNTIME TOTAL, BUILD+PART, PART (cycles): 
+16160005234 326706098   129240
+
+The reported results are cumulative across phases, so you should not add the
+three numbers together. In the example above, this means that the operation was
+completed in 16,160,005,234 cycles, of which 326,706,098 cycles was building
+the hash table and partitioning the inputs, and 129,240 cycles was partitioning
+alone (not surprising, since we don't do any partitioning for this algorithm).
+
+The conf/gen/ subdirectory contains a .conf file generator to play with.

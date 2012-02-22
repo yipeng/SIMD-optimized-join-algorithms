@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <df name="multijoin" root=".">
+      <df name="algo" kind="SOURCE_LOGICAL_FOLDER">
+        <in>algo.h</in>
+        <in>base.cpp</in>
+        <in>build.inl</in>
+        <in>flatmem.cpp</in>
+        <in>hashbase.cpp</in>
+        <in>hashtable.cpp</in>
+        <in>hashtable.h</in>
+        <in>nl.cpp</in>
+        <in>probe.inl</in>
+        <in>storage.cpp</in>
+      </df>
+      <df name="bzip2-1.0.5" kind="SOURCE_LOGICAL_FOLDER">
+        <in>blocksort.c</in>
+        <in>bzip2.c</in>
+        <in>bzip2recover.c</in>
+        <in>bzlib.c</in>
+        <in>bzlib.h</in>
+        <in>bzlib_private.h</in>
+        <in>compress.c</in>
+        <in>crctable.c</in>
+        <in>decompress.c</in>
+        <in>dlltest.c</in>
+        <in>huffman.c</in>
+        <in>mk251.c</in>
+        <in>randtable.c</in>
+        <in>spewG.c</in>
+        <in>unzcrash.c</in>
+      </df>
+      <df name="conf" kind="SOURCE_LOGICAL_FOLDER">
+        <df name="gen" kind="SOURCE_LOGICAL_FOLDER">
+        </df>
+      </df>
+      <df name="datagen" kind="SOURCE_LOGICAL_FOLDER">
+        <in>016M_build.tbl</in>
+        <in>10000_probe.tbl</in>
+        <in>100_probe.tbl</in>
+        <in>10_probe.tbl</in>
+        <in>256M_probe.tbl</in>
+        <in>256M_probe_3.tbl</in>
+        <in>orig_016M_build.tbl</in>
+        <in>test.tbl</in>
+        <in>test_016M_build.tbl</in>
+      </df>
+      <df name="dist">
+        <df name="bin" kind="SOURCE_LOGICAL_FOLDER">
+        </df>
+        <df name="include" kind="SOURCE_LOGICAL_FOLDER">
+          <in>bzlib.h</in>
+          <in>libconfig.h</in>
+          <in>libconfig.h++</in>
+        </df>
+        <df name="lib" kind="SOURCE_LOGICAL_FOLDER">
+          <df name="pkgconfig" kind="SOURCE_LOGICAL_FOLDER">
+          </df>
+        </df>
+        <df name="man" kind="SOURCE_LOGICAL_FOLDER">
+          <df name="man1" kind="SOURCE_LOGICAL_FOLDER">
+          </df>
+        </df>
+        <df name="share" kind="SOURCE_LOGICAL_FOLDER">
+          <df name="info" kind="SOURCE_LOGICAL_FOLDER">
+          </df>
+        </df>
+      </df>
+      <df name="libconfig-1.2" kind="SOURCE_LOGICAL_FOLDER">
+        <df name="autom4te.cache">
+        </df>
+        <df name="debian" kind="SOURCE_LOGICAL_FOLDER">
+        </df>
+        <df name="doc" kind="SOURCE_LOGICAL_FOLDER">
+        </df>
+        <df name="samples" kind="SOURCE_LOGICAL_FOLDER">
+          <df name="c" kind="SOURCE_LOGICAL_FOLDER">
+            <in>sample1.c</in>
+            <in>sample2.c</in>
+            <in>sample3.c</in>
+            <in>stub.c</in>
+          </df>
+          <df name="c++" kind="SOURCE_LOGICAL_FOLDER">
+            <in>sample1.cpp</in>
+            <in>sample2.cpp</in>
+            <in>sample3.cpp</in>
+            <in>stubcpp.cpp</in>
+          </df>
+        </df>
+        <in>ac_config.h</in>
+        <in>grammar.c</in>
+        <in>grammar.h</in>
+        <in>libconfig.c</in>
+        <in>libconfig.h</in>
+        <in>libconfig.h++</in>
+        <in>libconfigcpp.c++</in>
+        <in>private.h</in>
+        <in>scanner.c</in>
+        <in>scanner.h</in>
+      </df>
+      <in>Barrier.cpp</in>
+      <in>Barrier.h</in>
+      <in>ProcessorMap.cpp</in>
+      <in>ProcessorMap.h</in>
+      <in>affinitizer.cpp</in>
+      <in>affinitizer.h</in>
+      <in>atomics.h</in>
+      <in>bucket.h</in>
+      <in>buffer.inl</in>
+      <in>comparator.cpp</in>
+      <in>comparator.h</in>
+      <in>custom_asserts.h</in>
+      <in>exceptions.h</in>
+      <in>hash.cpp</in>
+      <in>hash.h</in>
+      <in>joinerfactory.cpp</in>
+      <in>joinerfactory.h</in>
+      <in>loader.cpp</in>
+      <in>loader.h</in>
+      <in>lock.h</in>
+      <in>main-serial.cpp</in>
+      <in>main.cpp</in>
+      <in>multijoin-serial.cpp</in>
+      <in>multijoin.cpp</in>
+      <in>page.cpp</in>
+      <in>page.h</in>
+      <in>pagecursor.h</in>
+      <in>parser.cpp</in>
+      <in>parser.h</in>
+      <in>partitioner.cpp</in>
+      <in>partitioner.h</in>
+      <in>partitionerfactory.cpp</in>
+      <in>partitionerfactory.h</in>
+      <in>prefetch.h</in>
+      <in>query.h</in>
+      <in>rdtsc.h</in>
+      <in>schema.cpp</in>
+      <in>schema.h</in>
+      <in>table.cpp</in>
+      <in>table.h</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>Makefile-multijoin.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile-multijoin.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>$(MAKE) -f Makefile</buildCommand>
+          <cleanCommand>$(MAKE) -f Makefile clean</cleanCommand>
+          <executablePath>/home/yipeng/Desktop/multijoin/./multijoin</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="algo/base.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="algo/flatmem.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="algo/hashbase.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="algo/nl.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="algo/storage.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="comparator.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <folder path="multijoin/libconfig-1.2/samples">
+        <cTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="hash.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="joinerfactory.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="loader.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="main-serial.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="main.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="partitioner.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="partitionerfactory.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="schema.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="table.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+    </conf>
+    <conf name="Copy_of_Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>$(MAKE) -f Makefile</buildCommand>
+          <cleanCommand>$(MAKE) -f Makefile clean</cleanCommand>
+          <executablePath>/home/yipeng/Desktop/multijoin/./multijoin</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="algo/base.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="algo/flatmem.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="algo/hashbase.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="algo/nl.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="algo/storage.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="comparator.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <folder path="multijoin/libconfig-1.2/samples">
+        <cTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="hash.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="joinerfactory.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="loader.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="main-serial.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="main.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="partitioner.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="partitionerfactory.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="schema.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="table.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>libconfig-1.2</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

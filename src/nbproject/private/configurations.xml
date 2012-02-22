@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <projectmakefile>Makefile-multijoin.mk</projectmakefile>
+  <defaultConf>1</defaultConf>
+  <confs>
+    <conf name="Default" type="0">
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <dbxdebugger version="1">
+        <pathmaps>
+          <pathmap from="/home/yipeng/Desktop/multijoin/dist/lib/:/home/yipeng/Desktop/multijoin/dist/lib/:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64"
+                   to="/home/yipeng/Desktop/multijoin/dist/lib/:/home/yipeng/Desktop/multijoin/dist/lib/:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64"/>
+        </pathmaps>
+        <interceptlist>
+          <interceptoptions all="false" unhandled="true" unexpected="true"/>
+        </interceptlist>
+        <signals>
+        </signals>
+        <options>
+          <DebugOptions>
+            <option name="output_dynamic_type" value="on"/>
+            <option name="output_inherited_members" value="on"/>
+            <option name="scope_global_enums" value="on"/>
+            <option name="c_array_op" value="on"/>
+            <option name="language_mode" value="c++"/>
+          </DebugOptions>
+        </options>
+        <buildfirst buildfirst_overriden="false" buildfirst_old="false"/>
+      </dbxdebugger>
+      <dbxrtc version="1">
+        <options>
+          <RtcOptions>
+            <option name="rtc_access_enable" value="off"/>
+            <option name="rtc_leaks_memuse_enable" value="off"/>
+            <option name="rtc_error_log_file_name" value="/dev/null"/>
+          </RtcOptions>
+        </options>
+        <loadobjs>
+          <lo name="/home/yipeng/Desktop/multijoin/multijoin" skip="false"/>
+          <lo name="/lib64/ld-linux-x86-64.so.2" skip="false"/>
+          <lo name="/home/yipeng/Desktop/multijoin/dist/lib/libconfig++.so.5"
+              skip="false"/>
+          <lo name="/lib/libpthread.so.0" skip="false"/>
+          <lo name="/usr/lib/libstdc++.so.6" skip="false"/>
+          <lo name="/lib/libm.so.6" skip="false"/>
+          <lo name="/lib/libgcc_s.so.1" skip="false"/>
+          <lo name="/lib/libc.so.6" skip="false"/>
+        </loadobjs>
+      </dbxrtc>
+      <gizmo_options version="3">
+        <profileOnRun>false</profileOnRun>
+        <configurationname>GizmoSunStudioStandard</configurationname>
+      </gizmo_options>
+      <nativedebugger version="1">
+        <engine>dbx</engine>
+      </nativedebugger>
+      <runprofile version="6">
+        <args>/home/yipeng/Desktop/multijoin/conf/000001_no.conf</args>
+        <rundir>.</rundir>
+        <buildfirst>true</buildfirst>
+        <console-type>3</console-type>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+          <variable name="LD_LIBRARY_PATH" value="$PWD/dist/lib/:$LD_LIBRARY_PATH"/>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Copy_of_Default" type="0">
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <dbxdebugger version="1">
+        <pathmaps>
+          <pathmap from="/home/yipeng/Desktop/multijoin/dist/lib/:/home/yipeng/Desktop/multijoin/dist/lib/:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64"
+                   to="/home/yipeng/Desktop/multijoin/dist/lib/:/home/yipeng/Desktop/multijoin/dist/lib/:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64"/>
+        </pathmaps>
+        <interceptlist>
+          <interceptoptions all="false" unhandled="true" unexpected="true"/>
+        </interceptlist>
+        <signals>
+        </signals>
+        <options>
+          <DebugOptions>
+            <option name="output_dynamic_type" value="on"/>
+            <option name="output_inherited_members" value="on"/>
+            <option name="scope_global_enums" value="on"/>
+            <option name="c_array_op" value="on"/>
+            <option name="language_mode" value="c++"/>
+          </DebugOptions>
+        </options>
+        <buildfirst buildfirst_overriden="false" buildfirst_old="false"/>
+      </dbxdebugger>
+      <dbxrtc version="1">
+        <options>
+          <RtcOptions>
+            <option name="rtc_access_enable" value="off"/>
+            <option name="rtc_leaks_memuse_enable" value="off"/>
+            <option name="rtc_error_log_file_name" value="/dev/null"/>
+          </RtcOptions>
+        </options>
+        <loadobjs>
+          <lo name="/home/yipeng/Desktop/multijoin/multijoin" skip="false"/>
+          <lo name="/lib64/ld-linux-x86-64.so.2" skip="false"/>
+          <lo name="/home/yipeng/Desktop/multijoin/dist/lib/libconfig++.so.5"
+              skip="false"/>
+          <lo name="/lib/libpthread.so.0" skip="false"/>
+          <lo name="/usr/lib/libstdc++.so.6" skip="false"/>
+          <lo name="/lib/libm.so.6" skip="false"/>
+          <lo name="/lib/libgcc_s.so.1" skip="false"/>
+          <lo name="/lib/libc.so.6" skip="false"/>
+        </loadobjs>
+      </dbxrtc>
+      <gizmo_options version="3">
+        <profileOnRun>false</profileOnRun>
+        <configurationname>GizmoSunStudioStandard</configurationname>
+      </gizmo_options>
+      <nativedebugger version="1">
+        <engine>dbx</engine>
+      </nativedebugger>
+      <runprofile version="6">
+        <args>/home/yipeng/Desktop/multijoin/conf/000001_no.conf</args>
+        <rundir>.</rundir>
+        <buildfirst>true</buildfirst>
+        <console-type>3</console-type>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+          <variable name="LD_LIBRARY_PATH" value="$PWD/dist/lib/:$LD_LIBRARY_PATH"/>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,14 @@
+prefix=/home/yipeng/Desktop/multijoin/libconfig-1.2/../dist
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libconfig++
+Description: C++ Configuration File Library
+Version: 1.2
+URL: http://www.hyperrealm.com/main.php?s=libconfig
+Requires:
+Conflicts:
+Libs: -L${libdir} -lconfig++
+Libs.private:  
+Cflags: -I${includedir}
