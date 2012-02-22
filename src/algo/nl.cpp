@@ -107,7 +107,7 @@ HashTable NestedLoops::realbuildHashCursor(PageCursor* t, int threadid) {
 	//	 print build tables, this should be in DEBUG
 	//	 needs to be relative path too
 		std::stringstream sstm;
-		sstm << "/home/yipeng/Desktop/multijoin2/datagen/output/build" << threadid;
+		sstm << "./datagen/output/build" << threadid;
 		std::string result = sstm.str();
 		ofstream foutput(result.c_str());
 		foutput << "Revealing build table... \n" << flush;
@@ -132,7 +132,7 @@ PageCursor* NestedLoops::realbuildCursor(PageCursor* t, int threadid) {
 	PageCursor* z =  wrtmp;
 #ifndef SUSPEND_OUTPUT
 		std::stringstream sstm;
-		sstm << "/home/yipeng/Desktop/multijoin2/datagen/output/pBuild" << threadid;
+		sstm << "./datagen/output/pBuild" << threadid;
 		std::string result = sstm.str();
 		ofstream foutput(result.c_str());
 		foutput << "Revealing build table... \n" << flush;
@@ -163,7 +163,7 @@ void NestedLoops::build(SplitResult tin, int threadid) {
 
 #ifndef SUSPEND_OUTPUT
 		std::stringstream sstm;
-		sstm << "/home/yipeng/Desktop/multijoin2/datagen/output/build" << threadid;
+		sstm << "./datagen/output/build" << threadid;
 		std::string result = sstm.str();
 		ofstream foutput(result.c_str());
 		foutput << "Revealing build table... \n" << flush;
@@ -287,7 +287,7 @@ inline PageCursor* NestedLoops::probeNestedHash(SplitResult tin, int threadid, H
 	ret->reset();
 #ifndef SUSPEND_OUTPUT
 	std::stringstream sstm1;
-	sstm1 << "/home/yipeng/Desktop/multijoin2/datagen/output/results" << threadid;
+	sstm1 << "./datagen/output/results" << threadid;
 	std::string result = sstm1.str();
 	ofstream foutput(result.c_str());
 	foutput << "Revealing outputZ... \n" << flush;
@@ -355,7 +355,7 @@ PageCursor* NestedLoops::probeStarHashV(SplitResult tin, int threadid, HashTable
 	ret->reset();
 #ifndef SUSPEND_OUTPUT
 	std::stringstream sstm1;
-	sstm1 << "/home/yipeng/Desktop/multijoin2/datagen/output/results" << threadid;
+	sstm1 << "./datagen/output/results" << threadid;
 	std::string result = sstm1.str();
 	ofstream foutput(result.c_str());
 	foutput << "Revealing outputZ... \n" << flush;
@@ -387,7 +387,7 @@ PageCursor* NestedLoops::probeStar(SplitResult tin, int threadid, PageCursor* t1
 
 #ifndef SUSPEND_OUTPUT
 	std::stringstream sstm;
-	sstm << "/home/yipeng/Desktop/multijoin2/datagen/output/build4probe" << threadid;
+	sstm << "./datagen/output/build4probe" << threadid;
 	std::string result2 = sstm.str();
 	ofstream foutput2(result2.c_str());
 	foutput2 << "Revealing build table. b4 probe.. \n" << flush;
@@ -415,7 +415,7 @@ PageCursor* NestedLoops::probeStar(SplitResult tin, int threadid, PageCursor* t1
 	//ret->reset();
 #ifndef SUSPEND_OUTPUT
 	std::stringstream sstm1;
-	sstm1 << "/home/yipeng/Desktop/multijoin2/datagen/output/results" << threadid;
+	sstm1 << "./datagen/output/results" << threadid;
 	std::string result = sstm1.str();
 	ofstream foutput(result.c_str());
 	foutput << "Revealing output1... \n" << flush;
@@ -447,7 +447,7 @@ PageCursor* NestedLoops::probeStar(SplitResult tin, int threadid, PageCursor* t1
 PageCursor* NestedLoops::probe(SplitResult tin, int threadid) {
 #ifndef SUSPEND_OUTPUT
 		std::stringstream sstm;
-		sstm << "/home/yipeng/Desktop/multijoin2/datagen/output/build4probe" << threadid;
+		sstm << "./datagen/output/build4probe" << threadid;
 		std::string result2 = sstm.str();
 		ofstream foutput2(result2.c_str());
 		foutput2 << "Revealing build table. b44 probe.. \n" << flush;
@@ -474,7 +474,7 @@ PageCursor* NestedLoops::probe(SplitResult tin, int threadid) {
 	ret->reset();
 #ifndef SUSPEND_OUTPUT
 		std::stringstream sstm1;
-		sstm1 << "/home/yipeng/Desktop/multijoin2/datagen/output/results" << threadid;
+		sstm1 << "./datagen/output/results" << threadid;
 		std::string result = sstm1.str();
 		ofstream foutput(result.c_str());
 		foutput << "Revealing output... \n" << flush;
@@ -505,7 +505,7 @@ PageCursor* NestedLoops::probe(SplitResult tin, int threadid) {
 PageCursor* NestedLoops::probeN2(SplitResult tin, int threadid) {
 #ifndef SUSPEND_OUTPUT
 		std::stringstream sstm;
-		sstm << "/home/yipeng/Desktop/multijoin2/datagen/output/build4probe" << threadid;
+		sstm << "./datagen/output/build4probe" << threadid;
 		std::string result2 = sstm.str();
 		ofstream foutput2(result2.c_str());
 		foutput2 << "Revealing build table. b44 probe.. \n" << flush;
@@ -532,7 +532,7 @@ PageCursor* NestedLoops::probeN2(SplitResult tin, int threadid) {
 	ret->reset();
 #ifndef SUSPEND_OUTPUT
 		std::stringstream sstm1;
-		sstm1 << "/home/yipeng/Desktop/multijoin2/datagen/output/results" << threadid;
+		sstm1 << "./datagen/output/results" << threadid;
 		std::string result = sstm1.str();
 		ofstream foutput(result.c_str());
 		foutput << "Revealing output... \n" << flush;
@@ -1352,7 +1352,7 @@ void NestedLoops::joinPageTupExperimental(WriteTable* output, Page* page, void* 
 //        _mm_store_si128 ((__m128i *)&res1, eq128);
 //
 ////        std::stringstream sstm1;
-////        sstm1 << "/home/yipeng/Desktop/multijoin/datagen/output/check" << endl;
+////        sstm1 << "./datagen/output/check" << endl;
 ////        std::string result = sstm1.str();
 ////        ofstream foutput(result.c_str());
 ////        foutput << "Revealing build table... \n" << flush;
